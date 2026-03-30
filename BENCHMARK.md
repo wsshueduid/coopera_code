@@ -14,8 +14,8 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/benchmark/main.py [OPTIONS]
 **Core Configuration**
 - `--collab-type[1,2]` - Collaboration type (default: 2).
 - `--collab-setting[1,2,3,4]` - Collaboration setting (default: 1).
-- `--use-gpt-human[True/False]` - Read human simulation results by GPT; if False, use Llama (default: True).
-- `--use-gpt-robot[True/False]` - Use GPT for robot intention/task discovery; if False, use Llama (default: True).
+- `--use-gpt-human[True/False]` - Read human simulation results by GPT; if False, use Qwen3.5-27B (default: True).
+- `--use-gpt-robot[True/False]` - Use GPT for robot intention/task discovery; if False, use Qwen3.5-27B (default: True).
 - `--start-logic-robot[True/False]` - Restart robot intention/task discovery (default: True).
 - `--start-logic-lora[True/False]` - Restart LoRA-based intention/task classification (default: True).
 

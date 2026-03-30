@@ -47,7 +47,7 @@ Thus, we recommend downloading our pre-generated and modified episode datasets i
 
 ## 5. Simulate Humans
 
-🖥️ If using local Llama inference, the minimum requirement is 2x GPUs with at least 24 GB VRAM each.
+🖥️ If using local Qwen3.5-27B inference, the minimum requirement is 2x GPUs with at least 40 GB VRAM each.
 
 ```bash
 export QT_QPA_PLATFORM="offscreen"
@@ -64,7 +64,7 @@ CUDA_VISIBLE_DEVICES="x,y,..." python coopera_main/human_sim/human_sim.py [OPTIO
 **Options**
 
 **Core Configuration**
-- `--use-gpt-human [True/False]` - Use GPT or Llama for human simulation (default: true)
+- `--use-gpt-human [True/False]` - Use GPT or Qwen3.5-27B for human simulation (default: true)
 - `--start-logic-human [True/False]` - Restart human simulation (default: true)
 - `--collab-type [1/2]` - Collaboration type (default: 2)
 
